@@ -140,3 +140,6 @@ if has("cscope")
 endif
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+" Press i to enter insert mode, and ii to exit.
+:imap ii <Esc>
