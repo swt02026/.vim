@@ -85,6 +85,11 @@ The next time you open a file from your C/C++ project, [YouCompleteMe][3] is
 smart enough to figure out the include paths etc. on its own. Well, somehow. In
 really big and complicated projects, there seem to be issues still.
 
+To get to know what other options you can place in the `.ycm_extra_conf.py` file
+you should have a look at
+
+    view ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
+
 # About
 
 This is inspired by the post [Synchronizing plugins with git submodules and
