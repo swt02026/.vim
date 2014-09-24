@@ -19,7 +19,7 @@ You need to bring in the code of the plugins by updating the plugins
 
 # About
 
-This is inspired by the ["Synchronizing plugins with git submodules and
-pathogen"][1] from. 
+This is inspired by the post ["Synchronizing plugins with git submodules and
+pathogen"][1]. 
 
 [1]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
