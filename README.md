@@ -74,7 +74,7 @@ This will finally activate your vim config
 Most of the time your C/C++ project uses custom compiler flags. To make
 [YouCompleteMe][3] automatically find them, you have to enable the
 `CMAKE_EXPORT_COMPILE_COMMANDS` when configuring your CMake build. Then a file
-named `compile_commands.json` will be created in the build directory.
+named [compile_commands.json][4] will be created in the build directory.
 
 Create a file called `.ycm_extra_conf.py` in your project's top directory
 and add the following line to it:
@@ -93,3 +93,4 @@ pathogen][1].
 [1]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 [2]: http://llvm.org/apt/
 [3]: https://github.com/Valloric/YouCompleteMe 
+[4]: http://clang.llvm.org/docs/JSONCompilationDatabase.html
