@@ -93,19 +93,20 @@ Most of the time your C/C++ project uses custom compiler flags. To make
 `CMAKE_EXPORT_COMPILE_COMMANDS` when configuring your CMake build. Then a file
 named [compile_commands.json][4] will be created in the build directory.
 
-Create a file called `.ycm_extra_conf.py` in your project's top directory
-and add the following line to it:
+We can make use of this file by copying a script to your project's source
+directory:
 
-    compilation_database = 'ABSOLUTE_PATH_TO_YOUR_BUILD_DIRECTORY'
+    cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py \
+      /YOUR/SOURCE/ROOT/DIR/
+
+Then open the file `/YOUR/SOURCE/ROOT/DIR/.ycm_extra_conf.py` and change the
+`compilation_database` variable to point to the directory in which you build
+with CMake. Remember, that is where the `compile_commands.json` file is.
+
+    compilation_database = '/PATH/TO/YOUR/CMAKE/BUILD/DIR'
 
 The next time you open a file from your C/C++ project, [YouCompleteMe][3] is
-smart enough to figure out the include paths etc. on its own. Well, somehow. In
-really big and complicated projects, there seem to be issues still.
-
-To get to know what other options you can place in the `.ycm_extra_conf.py` file
-you should have a look at
-
-    view ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
+smart enough to figure out the include paths etc. on its own.
 
 # About
 
