@@ -27,7 +27,11 @@ Follow the steps to install the development version of [LLVM via Apt][2]. This i
 
     apt-get update
     
-    apt-get install clang-3.6 clang-3.6-doc libclang-common-3.6-dev libclang-3.6-dev libclang1-3.6 libclang1-3.6-dbg libllvm-3.6-ocaml-dev libllvm3.6 libllvm3.6-dbg lldb-3.6 llvm-3.6 llvm-3.6-dev llvm-3.6-doc llvm-3.6-examples llvm-3.6-runtime clang-modernize-3.6 clang-format-3.6 python-clang-3.6 lldb-3.6-dev 
+    apt-get install clang-3.6 clang-3.6-doc libclang-common-3.6-dev \
+    libclang-3.6-dev libclang1-3.6 libclang1-3.6-dbg libllvm-3.6-ocaml-dev \
+    libllvm3.6 libllvm3.6-dbg lldb-3.6 llvm-3.6 llvm-3.6-dev llvm-3.6-doc \
+    llvm-3.6-examples llvm-3.6-runtime clang-modernize-3.6 clang-format-3.6 \
+    python-clang-3.6 lldb-3.6-dev
 
 As non-root run the following commands to build [YouCompleteMe][3].
 
@@ -37,7 +41,13 @@ As non-root run the following commands to build [YouCompleteMe][3].
     
     cd ycm_build
     
-    cmake -G "Unix Makefiles" -DUSE_SYSTEM_LIBCLANG=ON -DCMAKE_CXX_FLAGS="$(llvm-config-3.6 --cppflags)" -DCMAKE_C_FLAGS="$(llvm-config-3.6 --cflags)"  -DUSE_CLANG_COMPLETER=ON . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+    cmake -G "Unix Makefiles" \
+      -DUSE_SYSTEM_LIBCLANG=ON \
+      -DCMAKE_CXX_FLAGS="$(llvm-config-3.6 --cppflags)" \
+      -DCMAKE_C_FLAGS="$(llvm-config-3.6 --cflags)" \
+      -DUSE_CLANG_COMPLETER=ON \
+      . \
+      ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 
     make -j4 ycm_support_libs
 
