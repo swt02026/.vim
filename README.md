@@ -69,6 +69,23 @@ This will finally activate your vim config
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
+# Upgrading a plugin bundle
+
+At some point in the future, the fugitive plugin might be updated. To fetch the
+latest changes, go into the fugitive repository, and pull the latest version:
+
+    cd ~/.vim/bundle/fugitive
+    git pull origin master
+
+# Upgrading all bundled plugins
+
+You can use the foreach command to execute any shell script in from the root of
+all submodule directories. To update to the latest version of each plugin
+bundle, run the following:
+
+    git submodule foreach git pull origin master
+
+
 # Configure your CMake-based C/C++ project to work with YouCompleteMe
 
 Most of the time your C/C++ project uses custom compiler flags. To make
@@ -93,7 +110,7 @@ you should have a look at
 # About
 
 This is inspired by the post [Synchronizing plugins with git submodules and
-pathogen][1]. 
+pathogen][1] and the part of upgrading a plugin bundle is a 1:1 copy from the page. 
 
 [1]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 [2]: http://llvm.org/apt/
