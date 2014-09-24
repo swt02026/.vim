@@ -69,6 +69,22 @@ This will finally activate your vim config
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
+# Configure your CMake-based C/C++ project to work with YouCompleteMe
+
+Most of the time your C/C++ project uses custom compiler flags. To make
+[YouCompleteMe][3] automatically find them, you have to enable the
+`CMAKE_EXPORT_COMPILE_COMMANDS` when configuring your CMake build. Then a file
+named `compile_commands.json` will be created in the build directory.
+
+Create a file called `.ycm_extra_conf.py` in your project's top directory
+and add the following line to it:
+
+    compilation_database = 'ABSOLUTE_PATH_TO_YOUR_BUILD_DIRECTORY'
+
+The next time you open a file from your C/C++ project, [YouCompleteMe][3] is
+smart enough to figure out the include paths etc. on its own. Well, somehow. In
+really big and complicated projects, there seem to be issues still.
+
 # About
 
 This is inspired by the post [Synchronizing plugins with git submodules and
