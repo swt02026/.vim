@@ -103,8 +103,6 @@ Then open the file `/YOUR/SOURCE/ROOT/DIR/.ycm_extra_conf.py` and change the
 `compilation_database` variable to point to the directory in which you build
 with CMake. Remember, that is where the `compile_commands.json` file is.
 
-    compilation_database = '/PATH/TO/YOUR/CMAKE/BUILD/DIR'
-
 The next time you open a file from your C/C++ project, [YouCompleteMe][3] is
 smart enough to figure out the include paths etc. on its own.
 
