@@ -143,3 +143,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 
 " Press i to enter insert mode, and ii to exit.
 :imap ii <Esc>
+
+" Press <F7> to jump to previous tab and <F8> to jump to next tab
+:nmap <F7> :tabp<CR>
+:nmap <F8> :tabn<CR>
