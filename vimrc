@@ -147,3 +147,8 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 " Press <F7> to jump to previous tab and <F8> to jump to next tab
 :nmap <F7> :tabp<CR>
 :nmap <F8> :tabn<CR>
+
+# Enable clang-format for NORMAL and VISUAL mode (Ctrl+i)
+map <C-I> :pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
+# Enable clang-format for INSERT mode (Ctrl+i)
+imap <C-I> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
