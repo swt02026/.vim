@@ -40,10 +40,10 @@ set ignorecase                  " (ic) ignores case in search patterns
 set smartcase                   " (scs) don't ignore case when the search pattern has uppercase
 set infercase                   " (inf) during keyword completion, fix case of new word (when ignore case is on)
 
-set foldcolumn=6                " (fdc) width of fold column (to see where folds are)
-set foldmethod=indent           " (fdm) creates a fold for every level of indentation
-set foldlevel=99                " (fdl) when file is opened, don't close any folds
-set foldenable                  " (fen) enables or disables folding
+"set foldcolumn=6                " (fdc) width of fold column (to see where folds are)
+"set foldmethod=indent           " (fdm) creates a fold for every level of indentation
+"set foldlevel=99                " (fdl) when file is opened, don't close any folds
+"set foldenable                  " (fen) enables or disables folding
 
 "set backup                     " (bk) will create a backup before overwriting a file
 "set backupext=.bkup            " (bex) defines the extension used in a backup file (default is '~')
