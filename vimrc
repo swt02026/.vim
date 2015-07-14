@@ -8,6 +8,16 @@ if has('mouse')
   set mouse=a
 endif
 
+" Send more characters for redraws
+set ttyfast
+
+" If linux then set ttymouse
+let s:uname = system("echo -n \"$(uname)\"")
+if !v:shell_error && s:uname == "Linux"
+  "set ttymouse=xterm
+  set ttymouse=xterm2
+endif
+
 syntax on                       " turns syntax highlighting on
 colorscheme default             " defines the color scheme of the syntax highlighting
 set background=dark             " expect a dark console background
