@@ -152,3 +152,13 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 map <C-I> :pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
 " Enable clang-format for INSERT mode (Ctrl+i)
 imap <C-I> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.6.py<cr>
+
+
+"------------------------------
+" Add vim airline configuration
+"------------------------------
+set laststatus=2
+" See https://github.com/bling/vim-airline#smarter-tab-line
+let g:airline#extensions#tabline#enabled = 1
+
+
