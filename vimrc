@@ -3,6 +3,11 @@ execute pathogen#infect()
 
 filetype plugin indent on
 
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
+
 syntax on                       " turns syntax highlighting on
 colorscheme default             " defines the color scheme of the syntax highlighting
 set background=dark             " expect a dark console background
