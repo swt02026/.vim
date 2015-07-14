@@ -19,3 +19,6 @@
 [submodule "bundle/vim-indent-line"]
 	path = bundle/vim-indent-line
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline
