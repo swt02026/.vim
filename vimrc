@@ -161,4 +161,8 @@ set laststatus=2
 " See https://github.com/bling/vim-airline#smarter-tab-line
 let g:airline#extensions#tabline#enabled = 1
 
-
+" Mapping to NERDTree
+nmap <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
+let NERDChristmasTree=1
