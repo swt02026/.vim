@@ -106,6 +106,14 @@ with CMake. Remember, that is where the `compile_commands.json` file is.
 The next time you open a file from your C/C++ project, [YouCompleteMe][3] is
 smart enough to figure out the include paths etc. on its own.
 
+# How to install a new plugin
+
+    cd ~/.vim/bundle
+    git submodule add http://url-to/project.git project
+    git add ../.gitsumodules 
+    git add project
+    git commit -m "added project plugin"
+
 # About
 
 This is inspired by the post [Synchronizing plugins with git submodules and
