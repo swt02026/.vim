@@ -19,16 +19,16 @@ set tabstop=2                   " (ts) width (in spaces) that a <tab> is display
 set expandtab
 set shiftwidth=2                " (sw) width (in spaces) used in each step of autoindent (aswell as << and >>)
 "set smarttab                   " (sta) 'shiftwidth' used in front of a line, but 'tabstop' used otherwise
-set textwidth=80                " (tw) number of columns before an automatic line break is inserted (see formatoptions)
-set formatoptions=croq          " (fo) influences how vim automatically formats text
-set backspace=indent,eol,start  " (bs) allows backspacing beyond starting point of insert mode, indents and line breaks
-set nrformats+=alpha            " (nf) adds alpha chars to list that gets incremented/decremented with ^A/^X
-set listchars+=tab:>-           " (lcs) strings used in 'list' mode to show hidden characters (default=eol:$)
-set listchars+=trail:-
+"set textwidth=80                " (tw) number of columns before an automatic line break is inserted (see formatoptions)
+"set formatoptions=croq          " (fo) influences how vim automatically formats text
+"set backspace=indent,eol,start  " (bs) allows backspacing beyond starting point of insert mode, indents and line breaks
+"set nrformats+=alpha            " (nf) adds alpha chars to list that gets incremented/decremented with ^A/^X
+"set listchars+=tab:>-           " (lcs) strings used in 'list' mode to show hidden characters (default=eol:$)
+"set listchars+=trail:-
 set winminheight=0              " (wmh) the minimal height of the window when it's not the current window
 
 "set nowrap                     " allows text to continue off the window (need horizontal scrolling)
-set linebreak                   " (lbr) wrap long lines at a space instead of in the middle of a word
+"set linebreak                   " (lbr) wrap long lines at a space instead of in the middle of a word
 set sidescroll=5                " (ss) the minimal number of columns to scroll horizontally
 set listchars+=precedes:<       " (lcs) when 'nowrap', character to indicate that line continues off the page
 set listchars+=extends:>
