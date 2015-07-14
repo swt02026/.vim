@@ -110,7 +110,7 @@ smart enough to figure out the include paths etc. on its own.
 
     cd ~/.vim/bundle
     git submodule add http://url-to/project.git project
-    git add ../.gitsumodules 
+    git add ../.gitmodules 
     git add project
     git commit -m "added project plugin"
 
