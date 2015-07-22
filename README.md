@@ -106,6 +106,15 @@ with CMake. Remember, that is where the `compile_commands.json` file is.
 The next time you open a file from your C/C++ project, [YouCompleteMe][3] is
 smart enough to figure out the include paths etc. on its own.
 
+## Enable C++11 in YouCompleteMe
+
+If you are don't like YouCompleteMe to warn you about obviously correct C++11
+code snippets, follow these steps.
+
+No matter if you use the default `.ycm_extra_conf.py` or your own you should
+comment out the `-Wc++98-compat` in the `flags` array to allow C++11 in your
+code.
+
 # How to install a new plugin
 
     cd ~/.vim/bundle
