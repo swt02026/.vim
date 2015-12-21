@@ -17,7 +17,7 @@ if !v:shell_error && s:uname == "Linux"
   "set ttymouse=xterm
   set ttymouse=xterm2
 endif
-
+let g:solarized_termcolors=256
 syntax on                       " turns syntax highlighting on
 colorscheme default             " defines the color scheme of the syntax highlighting
 set background=dark             " expect a dark console background
@@ -154,7 +154,7 @@ if has("cscope")
     nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 endif
 
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 " Press i to enter insert mode, and ii to exit.
 :imap ii <Esc>
