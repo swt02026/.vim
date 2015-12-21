@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Installation on Ubuntu
 
 ## Clone the repo
@@ -132,3 +133,8 @@ pathogen][1] and the part of upgrading a plugin bundle is a 1:1 copy from the pa
 [2]: http://llvm.org/apt/
 [3]: https://github.com/Valloric/YouCompleteMe 
 [4]: http://clang.llvm.org/docs/JSONCompilationDatabase.html
+=======
+# .vim
+vim plugin and colorscheme
+use [dotphiles/dotvim](https://github.com/dotphiles/dotvim)
+>>>>>>> d7b050ed1e1872ad30d35cc1a014344e37fa02b1
